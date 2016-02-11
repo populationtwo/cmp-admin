@@ -21,11 +21,11 @@
 //The sidebar
 .control-sidebar {
   position: absolute;
-  padding-top: $navbar-height;
+  padding-top: 68px;
   z-index: 1010;
   //Fix position after header collapse
   @media (max-width: $screen-sm) {
-    padding-top: $navbar-height +50;
+    padding-top: 68px +50;
   }
   //Tab panes
   > .tab-content {

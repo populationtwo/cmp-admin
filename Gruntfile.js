@@ -6,7 +6,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
         watch: {
             // If any .less file changes in directory "build/less/" run the "less"-task.
-            files: ["build/less/*.less", "build/less/skins/*.less", "build/sass/*.scss", "dist/js/app.js"],
+            files: ["build/less/*.less", "build/less/skins/*.less", "assets/sass/*.scss", "dist/js/app.js"],
             tasks: ["sass", "uglify"]
         },
         // "less"-task configuration
@@ -67,20 +67,20 @@ module.exports = function (grunt) {
             development: {                            // Target
                 options: {                       // Target options
                     style: 'expanded',
-                    loadPath: 'bower_components/bootstrap-sass/assets/stylesheets'
+                    loadPath: 'assets/bower_components/bootstrap-sass/assets/stylesheets'
                 },
                 files: {                         // Dictionary of files
-                    'dist/css/main-style.css': 'build/sass/main-style.scss',       // 'destination': 'source'
+                    'dist/css/main-style.css': 'assets/sass/main-style.scss',       // 'destination': 'source'
                 }
             },
             dist: {                            // Target
                 options: {                       // Target options
                     style: 'compressed',
-                    loadPath: 'bower_components/bootstrap-sass/assets/stylesheets'
+                    loadPath: 'assets/bower_components/bootstrap-sass/assets/stylesheets'
                 },
                 files: {                         // Dictionary of files
                     // 'destination': 'source'
-                    'dist/css/main-style.min.css': 'build/sass/main-style.scss',
+                    'dist/css/main-style.min.css': 'assets/sass/main-style.scss',
                 }
             }
 

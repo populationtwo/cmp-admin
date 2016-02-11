@@ -6,11 +6,30 @@
 
 $boxed-layout-bg-image-path: "../img/boxed-bg.jpg";
 
+
+//NEW SIGNATURE PALLETE
+//--------------------------------------------------------
+
+// Primary
+$congress-blue: #004B87;
+$picton-blue: #54C9E8;
+$flush-orange: #FF8400;
+$shuttle-gray: #5B6770;
+$oslo-gray: #8A8D8F;
+
+//Secondary
+$athens-gray: #F3F3F4;
+$mercury: #E9E9E9;
+$mischka: #DFE1E6;
+$french-gray: #C5C6CC;
+$mako: #474E58;
+$shark: #24282D;
+
+
 //COLORS
 //--------------------------------------------------------
 //Primary
 $light-blue: #3c8dbc;
-$ns-blue: #004987;
 //Danger
 $red: #dd4b39;
 //Success
@@ -31,6 +50,7 @@ $maroon: #D81B60;
 $black: #111;
 $gray: #d2d6de;
 
+
 //LAYOUT
 //--------------------------------------------------------
 
@@ -46,13 +66,13 @@ $link-color: $light-blue;
 $link-hover-color: lighten($link-color, 15%);
 
 //Body background (Affects main content background only)
-$body-bg: #ecf0f5;
+$body-bg: #f3f3f4;
 
 //SIDEBAR SKINS
 //--------------------------------------------------------
 
 //Dark sidebar
-$sidebar-dark-bg: #222d32;
+$sidebar-dark-bg: #30353c;
 $sidebar-dark-hover-bg: darken($sidebar-dark-bg, 2%);
 $sidebar-dark-color: lighten($sidebar-dark-bg, 60%);
 $sidebar-dark-hover-color: #fff;

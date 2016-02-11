@@ -1,10 +1,10 @@
 {
-  "name": "AdminLTE",
-  "homepage": "http://almsaeedstudio.com",
+  "name": "CMP Admin",
+  "homepage": "",
   "authors": [
-    "Abdullah Almsaeed <support@almsaeedstudio.com>"
+    "New Signature"
   ],
-  "description": "Admin dashboard and control panel template",
+  "description": "",
   "main": [
     "index2.html",
     "dist/css/AdminLTE.css",

@@ -9,7 +9,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  padding-top: 50px;
+  padding-top: 68px;
   min-height: 100%;
   width: $sidebar-width;
   z-index: 810;
@@ -49,19 +49,23 @@
 .user-panel {
   position: relative;
   width: 100%;
-  padding: 10px;
+  padding: 18px;
   overflow: hidden;
   @include clearfix;
   > .image > img {
     width: 100%;
-    max-width: 45px;
+    max-width: 65px;
     height: auto;
   }
   > .info {
-    padding: 5px 5px 5px 15px;
+    padding: 10px 0 5px;
     line-height: 1;
-    position: absolute;
-    left: 55px;
+    //position: absolute;
+    //left: 55px;
+    .user-name {
+      font-size: 15px;
+      color: white;
+    }
     > p {
       font-weight: 600;
       margin-bottom: 9px;
@@ -89,7 +93,7 @@
     margin: 0;
     padding: 0;
     > a {
-      padding: 12px 5px 12px 15px;
+      padding: 12px 5px 12px 20px;
       display: block;
       > .fa,
       > .glyphicon,
@@ -105,6 +109,7 @@
   li.header {
     padding: 10px 25px 10px 15px;
     font-size: 12px;
+    text-transform: uppercase;
   }
   li > a > .fa-angle-left {
     width: auto;
