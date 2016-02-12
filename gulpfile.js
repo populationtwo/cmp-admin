@@ -27,7 +27,7 @@ gulp.task('sass', function () {
         .pipe(gulp.dest(cssPath))
         .pipe(livereload());
 });
-
+//TODO: Create distribution copy.
 
 gulp.task('watch', function () {
     livereload.listen();

@@ -32,26 +32,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src="assets/bower_components/respond/dest/respond.min.js"></script>
     <![endif]-->
 </head>
-<!--
-BODY TAG OPTIONS:
-=================
-Apply one or more of the following classes to get the
-desired effect
-|---------------------------------------------------------|
-| SKINS         | skin-blue                               |
-|               | skin-black                              |
-|               | skin-purple                             |
-|               | skin-yellow                             |
-|               | skin-red                                |
-|               | skin-green                              |
-|---------------------------------------------------------|
-|LAYOUT OPTIONS | fixed                                   |
-|               | layout-boxed                            |
-|               | layout-top-nav                          |
-|               | sidebar-collapse                        |
-|               | sidebar-mini                            |
-|---------------------------------------------------------|
--->
 <body class="hold-transition skin-ns sidebar-mini">
 <div class="wrapper">
 
@@ -246,23 +226,21 @@ desired effect
                 </div>
             </div>
 
-            <!-- search form (Optional) -->
-            <form action="#" method="get" class="sidebar-form">
-                <div class="input-group">
-                    <input type="text" name="q" class="form-control" placeholder="Search...">
-              <span class="input-group-btn">
-                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
-                </button>
-              </span>
-                </div>
-            </form>
-            <!-- /.search form -->
-
             <!-- Sidebar Menu -->
             <ul class="sidebar-menu">
                 <li class="header">navigation</li>
                 <!-- Optionally, you can add icons to the links -->
-                <li class="active"><a href="#"><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
+                <li class="treeview active">
+                    <a href="#"><i class="fa fa-home"></i> <span>Dashboard</span> <i
+                            class="fa fa-angle-left pull-right"></i></a>
+                    <ul class="treeview-menu">
+                        <li><a href="#">General</a></li>
+                        <li><a href="#">Financial</a></li>
+                        <li><a href="#">CIO</a></li>
+                    </ul>
+                </li>
+
+
                 <li class="treeview">
                     <a href="#"><i class="fa fa-bar-chart"></i> <span>Usage</span> <i
                             class="fa fa-angle-left pull-right"></i></a>
@@ -280,7 +258,7 @@ desired effect
                     </ul>
                 </li>
                 <li><a href="#"><i class="fa fa-envelope"></i> <span>Inbox</span>
-                    <small class="label pull-right bg-yellow">9</small>
+                    <small class="label pull-right bg-gray-light">9</small>
                 </a></li>
 
 

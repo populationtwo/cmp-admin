@@ -108,7 +108,7 @@
   }
   li.header {
     padding: 10px 25px 10px 15px;
-    font-size: 12px;
+    font-size: 13px;
     text-transform: uppercase;
   }
   li > a > .fa-angle-left {
@@ -155,4 +155,10 @@
       }
     }
   }
+}
+
+// Inbox label
+.bg-gray-light {
+  color: $shuttle-gray;
+  background-color: #f7f7f7;
 }

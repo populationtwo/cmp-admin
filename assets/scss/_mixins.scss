@@ -122,8 +122,7 @@
   .sidebar-menu > li {
     //Section Heading
     &.header {
-      color: lighten($sidebar-dark-bg, 20%);
-      background: darken($sidebar-dark-bg, 4%);
+      color: $oslo-gray;
     }
     //links
     > a {
@@ -132,13 +131,13 @@
     //Hover and active states
     &:hover > a, &.active > a {
       color: $sidebar-dark-hover-color;
-      background: $sidebar-dark-hover-bg;
       border-left-color: $link-hover-border-color;
+      background: $oslo-gray;
     }
     //First Level Submenu
     > .treeview-menu {
       margin: 0 1px;
-      background: $sidebar-dark-submenu-bg;
+      background: $shark;
     }
   }
 
