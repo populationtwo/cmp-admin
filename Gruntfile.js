@@ -1,3 +1,9 @@
+/*
+* Ignore this. Refer to gulpfile instead.
+*
+*
+* */
+
 // AdminLTE Gruntfile
 module.exports = function (grunt) {
 
