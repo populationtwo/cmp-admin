@@ -95,6 +95,8 @@
     > a {
       padding: 12px 5px 12px 20px;
       display: block;
+      border-bottom: 1px solid rgba(255,255,255,0.15);
+      border-top: 1px solid transparent;
       > .fa,
       > .glyphicon,
       > .ion {
@@ -110,6 +112,9 @@
     padding: 10px 25px 10px 15px;
     font-size: 13px;
     text-transform: uppercase;
+  }
+  li.header + li {
+    border-top: 1px solid rgba(255,255,255,0.15);
   }
   li > a > .fa-angle-left {
     width: auto;
