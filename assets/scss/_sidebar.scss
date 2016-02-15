@@ -17,7 +17,7 @@
   //Using disposable variable to join statements with a comma
   @include transition-transform(transform 0.3s ease-in-out, width 0.3s ease-in-out);
   @media (max-width: $screen-header-collapse) {
-    padding-top: 100px;
+    padding-top: 120px;
   }
   @media (max-width: $screen-xs-max) {
     @include translate(-$sidebar-width, 0);

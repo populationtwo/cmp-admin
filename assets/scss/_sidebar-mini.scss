@@ -16,7 +16,9 @@
         margin-left: 50px !important;
         z-index: 840;
       }
-
+      .user-panel {
+        padding: 10px;
+      }
       //Modify the sidebar to shrink instead of disappearing
       .main-sidebar {
         //Don't go away! Just shrink
@@ -30,7 +32,7 @@
           position: relative;
           > a {
             margin-right: 0;
-            padding: 11px 5px 11px 20px;
+            padding: 11px 5px 11px 18px;
           }
           > a > span {
             border-top-right-radius: 4px;

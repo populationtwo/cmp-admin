@@ -165,54 +165,54 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </ul>
                     </li>-->
                     <!-- User Account Menu -->
-                   <!-- <li class="dropdown user user-menu">
-                        &lt;!&ndash; Menu Toggle Button &ndash;&gt;
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            &lt;!&ndash; The user image in the navbar&ndash;&gt;
-                            <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-                            &lt;!&ndash; hidden-xs hides the username on small devices so only the image appears. &ndash;&gt;
-                            <span class="hidden-xs">Alexander Pierce</span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            &lt;!&ndash; The user image in the menu &ndash;&gt;
-                            <li class="user-header">
-                                <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                    <!-- <li class="dropdown user user-menu">
+                         &lt;!&ndash; Menu Toggle Button &ndash;&gt;
+                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                             &lt;!&ndash; The user image in the navbar&ndash;&gt;
+                             <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                             &lt;!&ndash; hidden-xs hides the username on small devices so only the image appears. &ndash;&gt;
+                             <span class="hidden-xs">Alexander Pierce</span>
+                         </a>
+                         <ul class="dropdown-menu">
+                             &lt;!&ndash; The user image in the menu &ndash;&gt;
+                             <li class="user-header">
+                                 <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
-                                <p>
-                                    Alexander Pierce - Web Developer
-                                    <small>Member since Nov. 2012</small>
-                                </p>
-                            </li>
-                            &lt;!&ndash; Menu Body &ndash;&gt;
-                            <li class="user-body">
-                                <div class="row">
-                                    <div class="col-xs-4 text-center">
-                                        <a href="#">Followers</a>
-                                    </div>
-                                    <div class="col-xs-4 text-center">
-                                        <a href="#">Sales</a>
-                                    </div>
-                                    <div class="col-xs-4 text-center">
-                                        <a href="#">Friends</a>
-                                    </div>
-                                </div>
-                                &lt;!&ndash; /.row &ndash;&gt;
-                            </li>
-                            &lt;!&ndash; Menu Footer&ndash;&gt;
-                            <li class="user-footer">
-                                <div class="pull-left">
-                                    <a href="#" class="btn btn-default btn-flat">Profile</a>
-                                </div>
-                                <div class="pull-right">
-                                    <a href="#" class="btn btn-default btn-flat">Sign out</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>-->
+                                 <p>
+                                     Alexander Pierce - Web Developer
+                                     <small>Member since Nov. 2012</small>
+                                 </p>
+                             </li>
+                             &lt;!&ndash; Menu Body &ndash;&gt;
+                             <li class="user-body">
+                                 <div class="row">
+                                     <div class="col-xs-4 text-center">
+                                         <a href="#">Followers</a>
+                                     </div>
+                                     <div class="col-xs-4 text-center">
+                                         <a href="#">Sales</a>
+                                     </div>
+                                     <div class="col-xs-4 text-center">
+                                         <a href="#">Friends</a>
+                                     </div>
+                                 </div>
+                                 &lt;!&ndash; /.row &ndash;&gt;
+                             </li>
+                             &lt;!&ndash; Menu Footer&ndash;&gt;
+                             <li class="user-footer">
+                                 <div class="pull-left">
+                                     <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                 </div>
+                                 <div class="pull-right">
+                                     <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                 </div>
+                             </li>
+                         </ul>
+                     </li>-->
                     <!-- Control Sidebar Toggle Button -->
-                   <!-- <li>
-                        <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-                    </li>-->
+                    <!-- <li>
+                         <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                     </li>-->
                 </ul>
             </div>
         </nav>
@@ -273,7 +273,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </a></li>
 
 
-
                 <li class="treeview">
                     <a href="#"><i class="fa fa-cog"></i> <span>Admin</span> <i
                             class="fa fa-angle-left pull-right"></i></a>
@@ -293,15 +292,42 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
-            <h1>
-                Page Header
-                <small>Optional description</small>
-            </h1>
-            <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
-                <li class="active">Here</li>
-            </ol>
+            <div class="content-header__title">
+                <h1>
+                    <span class="round-base">
+                    <i class="fa fa-home"></i>
+                    </span>
+                    Page Header
+                </h1>
+                <div class="content-header__title__info">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <p><strong>Most Recent Data Pull</strong></p>
+                            <p>2015-12-27 00:03:22</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <p><strong>Most Recent Data Point</strong></p>
+                            <p>2015-12-27</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <p><strong>Current API Key Expires</strong></p>
+                            <p>2016-05-30 09:20:55</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-header__breadcrumb">
+                <ol class="breadcrumb">
+                    <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
+                    <li class="active">Here</li>
+                </ol>
+
+            </div>
+
         </section>
+
 
         <!-- Main content -->
         <section class="content">
