@@ -168,26 +168,19 @@
   }
 
   .breadcrumb {
-    float: right;
+    position: relative;
+    top: 0;
+    right: 0;
+    float: none;
     background: transparent;
-    margin-top: 0;
+    padding-left: 15px;
     margin-bottom: 0;
-    font-size: 12px;
-    padding: 7px 5px;
-    position: absolute;
-    top: 15px;
-    right: 10px;
-    @include border-radius(2px, 2px, 2px, 2px);
-    @media (max-width: $screen-sm-max) {
-      position: relative;
-      top: 0;
-      right: 0;
-      float: none;
+    @media (min-width: $screen-md-min) {
       background: transparent;
-      padding-left: 15px;
-
+      margin-bottom: 0;
+      font-size: 12px;
+      padding-left: 25px;
     }
-
     > li > a {
       color: #444;
       text-decoration: none;
@@ -214,6 +207,7 @@
   background: #FFF;
   overflow: hidden;
   position: relative;
+  border-bottom: 1px solid $french-gray;
   @media (min-width: $screen-md-min) {
     padding: 20px 24px 16px;
   }
@@ -279,7 +273,9 @@
 
 .content-header__breadcrumb {
   background: $mercury;
+  border-bottom: 1px solid $french-gray;
 }
+
 .navbar-toggle {
   color: #fff;
   border: 0;
