@@ -60,7 +60,6 @@
       .navbar-collapse & {
         margin: 7.5px -15px;
       }
-
       > li {
         color: inherit;
         border: 0;
@@ -85,7 +84,6 @@
     @media (min-width: $screen-sm-min) {
       margin: 13px 0 0 24px;
       font-size: 20px;
-
     }
 
     &:before {
@@ -94,7 +92,6 @@
     &:hover {
       color: #fff;
       border: 1px solid transparent;
-
     }
     &:focus,
     &:active {
@@ -170,7 +167,7 @@
     }
   }
 
-  > .breadcrumb {
+  .breadcrumb {
     float: right;
     background: transparent;
     margin-top: 0;
@@ -183,12 +180,11 @@
     @include border-radius(2px, 2px, 2px, 2px);
     @media (max-width: $screen-sm-max) {
       position: relative;
-      margin-top: 5px;
       top: 0;
       right: 0;
       float: none;
-      background: $gray;
-      padding-left: 10px;
+      background: transparent;
+      padding-left: 15px;
 
     }
 
@@ -200,9 +196,9 @@
         margin-right: 5px;
       }
     }
-    > li + li:before {
+    /*> li + li:before {
       content: '>\00a0';
-    }
+    }*/
     li:before {
       @media (max-width: $screen-sm-max) {
 
@@ -216,38 +212,73 @@
 .content-header__title {
   padding: 20px 15px;
   background: #FFF;
-
+  overflow: hidden;
+  position: relative;
   @media (min-width: $screen-md-min) {
     padding: 20px 24px 16px;
   }
   > h1 {
-    font-size: 32px;
-    display: inline-block;
+    font-size: 24px;
+    display: block;
     margin: 0;
     height: 44px;
     line-height: 44px;
     top: -13px;
     position: relative;
-    margin-right: 15px;
-
+    @media (min-width: $screen-md-min) {
+      margin-right: 15px;
+      font-size: 32px;
+      display: inline-block;
+    }
   }
   .sep {
     padding: 0 5px;
     color: #000;
   }
 }
+
 .content-header__title__info {
-  min-width: 44%;
-  display: inline-block;
-  border-left: 1px solid black(0.2);
-  padding-left: 20px;
+  width: 100%;
+  @media (min-width: $screen-xs-min) {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  @media (min-width: $screen-lg-min) {
+    //min-width: 44%;
+    width: 550px;
+    border-left: 1px solid black(0.2);
+    padding-left: 10px;
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
   p {
     margin-bottom: 6px;
   }
   div > p:last-child {
     margin-bottom: 0;
   }
+  .col {
+    width: 100%;
+    //float: left;
+    position: relative;
+    min-height: 1px;
+    @media (min-width: $screen-xs-min) {
+      width: 33.33333%;
+      float: left;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
 
+}
+
+.content-header__breadcrumb {
+  background: $mercury;
 }
 .navbar-toggle {
   color: #fff;
