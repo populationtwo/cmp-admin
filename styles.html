@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CMP Admin | Starter</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <!-- Font Awesome -->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="assets/bower_components/components-font-awesome/css/font-awesome.min.css">
+
+    <!-- Ionicons -->
+    <!--<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">-->
+    <link rel="stylesheet" href="assets/bower_components/Ionicons/css/ionicons.min.css">
+
+    <!-- Main style -->
+    <link rel="stylesheet" href="assets/css/main-style.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script></script>
+    <!--<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
+    <script src="assets/bower_components/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="assets/bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="hold-transition skin-ns sidebar-mini">
+<div class="wrapper">
+
+    <!-- Main Header -->
+    <header class="main-header">
+
+        <!-- Logo -->
+        <a href="index2.html" class="logo">
+            <!-- mini logo for sidebar mini 50x50 pixels -->
+            <span class="logo-mini"><b>NS</b></span>
+            <!-- logo for regular state and mobile devices -->
+            <span class="logo-lg"><b>New Signature</b></span>
+        </a>
+
+        <!-- Header Navbar -->
+        <nav class="navbar navbar-static-top" role="navigation">
+            <!-- Sidebar toggle button-->
+            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                <span class="sr-only">Toggle navigation</span>
+            </a>
+            <!-- Navbar Right Menu -->
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+
+                    <!-- Notifications Menu -->
+                    <li class="dropdown notifications-menu">
+                        <!-- Menu toggle button -->
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-bell"></i>
+                            <span class="label label-danger">9</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="header">You have 9 notifications</li>
+                            <li>
+                                <!-- Inner Menu: contains the notifications -->
+                                <ul class="menu">
+                                    <li><!-- start notification -->
+                                        <a href="#">
+                                            <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                                        </a>
+                                    </li>
+                                    <!-- end notification -->
+                                </ul>
+                            </li>
+                            <li class="footer"><a href="#">View all</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Setting Button -->
+                    <li>
+                        <a href="#"><i class="fa fa-gear"></i></a>
+                    </li>
+
+                    <!-- Help Button -->
+                    <li>
+                        <a href="#"><i class="fa fa-question-circle"></i></a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Left side column. contains the logo and sidebar -->
+    <aside class="main-sidebar">
+
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+
+            <!-- Sidebar user panel (optional) -->
+            <div class="user-panel">
+                <div class="image">
+                    <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                </div>
+                <div class="info">
+                    <p class="user-name">Alexander Pierce</p>
+                    <!-- Role -->
+                    <span>Administrator</span>
+                    <!-- Status -->
+                    <!--<a href="#"><i class="fa fa-circle text-success"></i> Online</a>-->
+                </div>
+            </div>
+
+            <!-- Sidebar Menu -->
+            <ul class="sidebar-menu">
+                <li class="header">navigation</li>
+                <!-- Optionally, you can add icons to the links -->
+                <li class="treeview active">
+                    <a href="#"><i class="fa fa-home"></i> <span>Dashboard</span> <i
+                            class="fa fa-angle-left pull-right"></i></a>
+                    <ul class="treeview-menu">
+                        <li><a href="#">General</a></li>
+                        <li><a href="#">Financial</a></li>
+                        <li><a href="#">CIO</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="treeview">
+                    <a href="#"><i class="fa fa-bar-chart"></i> <span>Usage</span> <i
+                            class="fa fa-angle-left pull-right"></i></a>
+                    <ul class="treeview-menu">
+                        <li><a href="#">Link in level 2</a></li>
+                        <li><a href="#">Link in level 2</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#"><i class="fa fa-plug"></i> <span>Services</span> <i
+                            class="fa fa-angle-left pull-right"></i></a>
+                    <ul class="treeview-menu">
+                        <li><a href="#">Link in level 2</a></li>
+                        <li><a href="#">Link in level 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa fa-envelope"></i> <span>Inbox</span>
+                    <small class="label pull-right bg-gray-light">9</small>
+                </a></li>
+
+
+                <li class="treeview">
+                    <a href="#"><i class="fa fa-cog"></i> <span>Admin</span> <i
+                            class="fa fa-angle-left pull-right"></i></a>
+                    <ul class="treeview-menu">
+                        <li><a href="#">Link in level 2</a></li>
+                        <li><a href="#">Link in level 2</a></li>
+                    </ul>
+                </li>
+                <li class="header">At a glance</li>
+            </ul>
+            <!-- /.sidebar-menu -->
+        </section>
+        <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <div class="content-header__title">
+                <h1>
+                    <span class="round-base">
+                    <i class="fa fa-home"></i>
+                    </span>
+                    Page Header
+                </h1>
+                <div class="content-header__title__info">
+                    <div class="col">
+                        <p><strong>Most Recent Data Pull</strong></p>
+                        <p>2015-12-27 00:03:22</p>
+                    </div>
+                    <div class="col">
+                        <p><strong>Most Recent Data Point</strong></p>
+                        <p>2015-12-27</p>
+                    </div>
+                    <div class="col">
+                        <p><strong>Current API Key Expires</strong></p>
+                        <p>2016-05-30 09:20:55</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="content-header__breadcrumb">
+                <ol class="breadcrumb">
+                    <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
+                    <li class="active">Here</li>
+                </ol>
+
+            </div>
+
+        </section>
+
+
+        <!-- Main content -->
+        <section class="content">
+
+            <!-- Your Page Content Here -->
+
+            <div class="row">
+                <div class="col-md-4">
+
+                    <div class="box box-default color-palette-box">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Color Palette</h3>
+                        </div>
+                        <div class="box-body">
+                            <div class="row">
+                                <div class="col-sm-4 col-md-2">
+                                    <h4 class="text-center">Primary</h4>
+
+                                    <div class="color-palette-set">
+                                        <div class="bg-light-blue disabled color-palette"><span>Disabled</span></div>
+                                        <div class="bg-light-blue color-palette"><span>#3c8dbc</span></div>
+                                        <div class="bg-light-blue-active color-palette"><span>Active</span></div>
+                                    </div>
+                                </div>
+                                <!-- /.col -->
+                                <div class="col-sm-4 col-md-2">
+                                    <h4 class="text-center">Info</h4>
+
+                                    <div class="color-palette-set">
+                                        <div class="bg-aqua disabled color-palette"><span>Disabled</span></div>
+                                        <div class="bg-aqua color-palette"><span>#00c0ef</span></div>
+                                        <div class="bg-aqua-active color-palette"><span>Active</span></div>
+                                    </div>
+                                </div>
+                                <!-- /.col -->
+                                <div class="col-sm-4 col-md-2">
+                                    <h4 class="text-center">Success</h4>
+
+                                    <div class="color-palette-set">
+                                        <div class="bg-green disabled color-palette"><span>Disabled</span></div>
+                                        <div class="bg-green color-palette"><span>#00a65a</span></div>
+                                        <div class="bg-green-active color-palette"><span>Active</span></div>
+                                    </div>
+                                </div>
+                                <!-- /.col -->
+                                <div class="col-sm-4 col-md-2">
+                                    <h4 class="text-center">Warning</h4>
+
+                                    <div class="color-palette-set">
+                                        <div class="bg-yellow disabled color-palette"><span>Disabled</span></div>
+                                        <div class="bg-yellow color-palette"><span>#f39c12</span></div>
+                                        <div class="bg-yellow-active color-palette"><span>Active</span></div>
+                                    </div>
+                                </div>
+                                <!-- /.col -->
+                                <div class="col-sm-4 col-md-2">
+                                    <h4 class="text-center">Danger</h4>
+
+                                    <div class="color-palette-set">
+                                        <div class="bg-red disabled color-palette"><span>Disabled</span></div>
+                                        <div class="bg-red color-palette"><span>#f56954</span></div>
+                                        <div class="bg-red-active color-palette"><span>Active</span></div>
+                                    </div>
+                                </div>
+                                <!-- /.col -->
+                                <div class="col-sm-4 col-md-2">
+                                    <h4 class="text-center">Gray</h4>
+
+                                    <div class="color-palette-set">
+                                        <div class="bg-gray disabled color-palette"><span>Disabled</span></div>
+                                        <div class="bg-gray color-palette"><span>#d2d6de</span></div>
+                                        <div class="bg-gray-active color-palette"><span>Active</span></div>
+                                    </div>
+                                </div>
+                                <!-- /.col -->
+                            </div>
+                            <!-- /.row -->
+                            <div class="row">
+                                <div class="col-sm-4 col-md-2">
+                                    <h4 class="text-center">Navy</h4>
+
+                                    <div class="color-palette-set">
+                                        <div class="bg-navy disabled color-palette"><span>Disabled</span></div>
+                                        <div class="bg-navy color-palette"><span>#001F3F</span></div>
+                                        <div class="bg-navy-active color-palette"><span>Active</span></div>
+                                    </div>
+                                </div>
+                                <!-- /.col -->
+                                <div class="col-sm-4 col-md-2">
+                                    <h4 class="text-center">Teal</h4>
+
+                                    <div class="color-palette-set">
+                                        <div class="bg-teal disabled color-palette"><span>Disabled</span></div>
+                                        <div class="bg-teal color-palette"><span>#39CCCC</span></div>
+                                        <div class="bg-teal-active color-palette"><span>Active</span></div>
+                                    </div>
+                                </div>
+                                <!-- /.col -->
+                                <div class="col-sm-4 col-md-2">
+                                    <h4 class="text-center">Purple</h4>
+
+                                    <div class="color-palette-set">
+                                        <div class="bg-purple disabled color-palette"><span>Disabled</span></div>
+                                        <div class="bg-purple color-palette"><span>#605ca8</span></div>
+                                        <div class="bg-purple-active color-palette"><span>Active</span></div>
+                                    </div>
+                                </div>
+                                <!-- /.col -->
+                                <div class="col-sm-4 col-md-2">
+                                    <h4 class="text-center">Orange</h4>
+
+                                    <div class="color-palette-set">
+                                        <div class="bg-orange disabled color-palette"><span>Disabled</span></div>
+                                        <div class="bg-orange color-palette"><span>#ff851b</span></div>
+                                        <div class="bg-orange-active color-palette"><span>Active</span></div>
+                                    </div>
+                                </div>
+                                <!-- /.col -->
+                                <div class="col-sm-4 col-md-2">
+                                    <h4 class="text-center">Maroon</h4>
+
+                                    <div class="color-palette-set">
+                                        <div class="bg-maroon disabled color-palette"><span>Disabled</span></div>
+                                        <div class="bg-maroon color-palette"><span>#D81B60</span></div>
+                                        <div class="bg-maroon-active color-palette"><span>Active</span></div>
+                                    </div>
+                                </div>
+                                <!-- /.col -->
+                                <div class="col-sm-4 col-md-2">
+                                    <h4 class="text-center">Black</h4>
+
+                                    <div class="color-palette-set">
+                                        <div class="bg-black disabled color-palette"><span>Disabled</span></div>
+                                        <div class="bg-black color-palette"><span>#111111</span></div>
+                                        <div class="bg-black-active color-palette"><span>Active</span></div>
+                                    </div>
+                                </div>
+                                <!-- /.col -->
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+
+                    <div class="box box-default">
+                        <div class="box-header with-border">
+                            <i class="fa fa-text-width"></i>
+
+                            <h3 class="box-title">Typography</h3>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <h1>h1. Bootstrap heading</h1>
+
+                            <h2>h2. Bootstrap heading</h2>
+
+                            <h3>h3. Bootstrap heading</h3>
+                            <h4>h4. Bootstrap heading</h4>
+                            <h5>h5. Bootstrap heading</h5>
+                            <h6>h6. Bootstrap heading</h6>
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Quick Example</h3>
+                        </div>
+                        <!-- /.box-header -->
+                        <!-- form start -->
+                        <form role="form">
+                            <div class="box-body">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputFile">File input</label>
+                                    <input type="file" id="exampleInputFile">
+
+                                    <p class="help-block">Example block-level help text here.</p>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Check me out
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- /.box-body -->
+
+                            <div class="box-footer">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box box-primary">
+                        <div class="box-header">
+                            <i class="fa fa-edit"></i>
+
+                            <h3 class="box-title">Buttons</h3>
+                        </div>
+                        <div class="box-body pad table-responsive">
+                            <p>Various types of buttons. Using the base class <code>.btn</code></p>
+                            <table class="table table-bordered text-center">
+                                <tbody><tr>
+                                    <th>Normal</th>
+                                    <th>Large <code>.btn-lg</code></th>
+                                    <th>Small <code>.btn-sm</code></th>
+                                    <th>X-Small <code>.btn-xs</code></th>
+                                    <th>Flat <code>.btn-flat</code></th>
+                                    <th>Disabled <code>.disabled</code></th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-default">Default</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-default btn-lg">Default</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-default btn-sm">Default</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-default btn-xs">Default</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-default btn-flat">Default</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-default disabled">Default</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-primary">Primary</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-primary btn-lg">Primary</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-primary btn-sm">Primary</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-primary btn-xs">Primary</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-primary btn-flat">Primary</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-primary disabled">Primary</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-success">Success</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-success btn-lg">Success</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-success btn-sm">Success</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-success btn-xs">Success</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-success btn-flat">Success</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-success disabled">Success</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-info">Info</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-info btn-lg">Info</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-info btn-sm">Info</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-info btn-xs">Info</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-info btn-flat">Info</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-info disabled">Info</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-danger">Danger</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-danger btn-lg">Danger</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-danger btn-sm">Danger</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-danger btn-xs">Danger</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-danger btn-flat">Danger</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-danger disabled">Danger</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-warning">Warning</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-warning btn-lg">Warning</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-warning btn-sm">Warning</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-warning btn-xs">Warning</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-warning btn-flat">Warning</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-warning disabled">Warning</button>
+                                    </td>
+                                </tr>
+                                </tbody></table>
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                    <div class="box box-default">
+                        <div class="box-header with-border">
+                            <i class="fa fa-warning"></i>
+
+                            <h3 class="box-title">Alerts</h3>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <div class="alert alert-danger alert-dismissible">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                <h4><i class="icon fa fa-ban"></i> Alert!</h4>
+                                Danger alert preview. This alert is dismissable. A wonderful serenity has taken possession of my entire
+                                soul, like these sweet mornings of spring which I enjoy with my whole heart.
+                            </div>
+                            <div class="alert alert-info alert-dismissible">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                <h4><i class="icon fa fa-info"></i> Alert!</h4>
+                                Info alert preview. This alert is dismissable.
+                            </div>
+                            <div class="alert alert-warning alert-dismissible">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                <h4><i class="icon fa fa-warning"></i> Alert!</h4>
+                                Warning alert preview. This alert is dismissable.
+                            </div>
+                            <div class="alert alert-success alert-dismissible">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                <h4><i class="icon fa fa-check"></i> Alert!</h4>
+                                Success alert preview. This alert is dismissable.
+                            </div>
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+                    <div class="box">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Bordered Table</h3>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <table class="table table-bordered">
+                                <tbody><tr>
+                                    <th style="width: 10px">#</th>
+                                    <th>Task</th>
+                                    <th>Progress</th>
+                                    <th style="width: 40px">Label</th>
+                                </tr>
+                                <tr>
+                                    <td>1.</td>
+                                    <td>Update software</td>
+                                    <td>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge bg-red">55%</span></td>
+                                </tr>
+                                <tr>
+                                    <td>2.</td>
+                                    <td>Clean database</td>
+                                    <td>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar progress-bar-yellow" style="width: 70%"></div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge bg-yellow">70%</span></td>
+                                </tr>
+                                <tr>
+                                    <td>3.</td>
+                                    <td>Cron job running</td>
+                                    <td>
+                                        <div class="progress progress-xs progress-striped active">
+                                            <div class="progress-bar progress-bar-primary" style="width: 30%"></div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge bg-light-blue">30%</span></td>
+                                </tr>
+                                <tr>
+                                    <td>4.</td>
+                                    <td>Fix and squish bugs</td>
+                                    <td>
+                                        <div class="progress progress-xs progress-striped active">
+                                            <div class="progress-bar progress-bar-success" style="width: 90%"></div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge bg-green">90%</span></td>
+                                </tr>
+                                </tbody></table>
+                        </div>
+                        <!-- /.box-body -->
+                        <div class="box-footer clearfix">
+                            <ul class="pagination pagination-sm no-margin pull-right">
+                                <li><a href="#">«</a></li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">»</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED JS SCRIPTS -->
+
+<!-- jQuery 2.2.0 -->
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="assets/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/app.min.js"></script>
+
+<!-- Optionally, you can add Slimscroll and FastClick plugins.
+     Both of these plugins are recommended to enhance the
+     user experience. Slimscroll is required when using the
+     fixed layout. -->
+</body>
+</html>
