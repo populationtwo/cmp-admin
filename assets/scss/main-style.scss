@@ -1,69 +1,108 @@
-/*!
- *   AdminLTE v2.3.2
- *   Author: Almsaeed Studio
- *	 Website: Almsaeed Studio <http://almsaeedstudio.com>
- *   License: Open source - MIT
- *           Please visit http://opensource.org/licenses/MIT for more information
-!*/
+/*
+Content Management Portal
+Theme URL: http://newsignature.com/
+Author: New Signature
+*/
+
+//CSS Architecture based on http://itcss.io/ and https://smacss.com/
+
+/*------------------------------------------------------------------
+
+1.  Settings
+
+------------------------------------------------------------------*/
+//Global available settings, config, brand colours, etc
 //google fonts
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic);
-
 @import 'bootstrap';
+@import "settings/_variables";
 
-//Bootstrap Variables & Mixins
-//The core bootstrap code have not been modified. These files
-//are included only for reference.
-//@import (reference) "../bootstrap-less/mixins.less";
-//@import (reference) "../bootstrap-less/variables.less";
-//MISC
-//----
-@import "variables";
-@import "core";
-@import "mixins";
+/*------------------------------------------------------------------
 
-//COMPONENTS
-//-----------
-@import "header";
-@import "sidebar";
-@import "sidebar-mini";
-@import "control-sidebar";
-@import "dropdown";
-@import "forms";
-@import "progress-bars";
-@import "small-box";
-@import "boxes";
-@import "info-box";
-@import "timeline";
-@import "buttons";
-@import "callout";
-@import "alerts";
-@import "navs";
-@import "products";
-@import "table";
-@import "labels";
-@import "direct-chat";
-@import "users-list";
-@import "carousel";
-@import "modal";
-@import "social-widgets";
+2.  Tools
+
+------------------------------------------------------------------*/
+//Globally available tools, mixins, & functions
+@import "tools/_mixins";
+
+/*------------------------------------------------------------------
+
+3.  Generic
+
+------------------------------------------------------------------*/
+//Ground zero styles, normalize, reset, box sizing
+
+/*------------------------------------------------------------------
+
+4.  Base
+
+------------------------------------------------------------------*/
+// Unclassed html, h1-h6, links, list, etc
+// heading, images, links, list, page, quotes
+@import "base/_core";
+
+/*------------------------------------------------------------------
+
+5.  Objects
+
+------------------------------------------------------------------*/
+// Design patterns, no cosmetics.
+// Layout, media, wrappers
+// .ui-list {}
+// .ui-list__item {}
+
 //PAGES
-//------
-@import "mailbox";
-@import "lockscreen";
-@import "login_and_register";
-@import "404_500_errors";
-@import "invoice";
-@import "profile";
+@import "objects/mailbox";
+@import "objects/lockscreen";
+@import "objects/login_and_register";
+@import "objects/404_500_errors";
+@import "objects/invoice";
+@import "objects/profile";
+/*------------------------------------------------------------------
+
+6.  Components
+
+------------------------------------------------------------------*/
+// Designed components, only classes
+// avatar, buttons, page-title, etc
+
+@import "components/_header";
+@import "components/_sidebar";
+@import "components/_sidebar-mini";
+@import "components/_control-sidebar";
+@import "components/_dropdown";
+@import "components/_forms";
+@import "components/_progress-bars";
+@import "components/_small-box";
+@import "components/_boxes";
+@import "components/_info-box";
+@import "components/_timeline";
+@import "components/_buttons";
+@import "components/_callout";
+@import "components/_alerts";
+@import "components/_navs";
+@import "components/_products";
+@import "components/_table";
+@import "components/_labels";
+@import "components/_direct-chat";
+@import "components/_users-list";
+@import "components/_carousel";
+@import "components/_modal";
+@import "components/_social-widgets";
+@import "components/_miscellaneous";
+
+/*------------------------------------------------------------------
+
+6.  Trumps
+
+------------------------------------------------------------------*/
+// Helper and overrides
+
 //Plugins
-//--------
-@import "bootstrap-social";
-@import "fullcalendar";
-@import "select2";
-//Miscellaneous
-//-------------
-@import "miscellaneous";
-@import "print";
+@import "trumps/_bootstrap-social";
+@import "trumps/_fullcalendar";
+@import "trumps/_select2";
 
 //Overrides
-@import "skin-ns";
-
+@import "trumps/_print";
+@import "trumps/_skin-ns";
