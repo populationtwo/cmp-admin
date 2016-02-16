@@ -607,3 +607,23 @@
     width: 100% !important;
   }
 }
+
+
+// Numbers
+.number {
+  color: $shuttle-gray;
+  font-weight: 300;
+  &.large {
+    font-size: 40px;
+  }
+}
+.key-num {
+  font-size: 15px;
+  font-weight: 600;
+  &.positive {
+    color: #509c50;
+  }
+  &.negative {
+    color: #ca4543;
+  }
+}

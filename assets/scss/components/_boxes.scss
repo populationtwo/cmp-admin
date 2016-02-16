@@ -178,8 +178,10 @@
   display: block;
   padding: $box-padding;
   position: relative;
-
-  //Add bottom border
+  @media (min-width: $screen-md-min) {
+    padding: 20px;
+  }
+    //Add bottom border
   &.with-border {
     border-bottom: 1px solid $box-border-color;
     .collapsed-box & {
@@ -193,9 +195,11 @@
   > .ion,
   .box-title {
     display: inline-block;
-    font-size: 18px;
+    font-size: 16px;
     margin: 0;
     line-height: 1;
+    font-weight: 600;
+    color: $shuttle-gray;
   }
   > .fa,
   > .glyphicon,
@@ -217,6 +221,8 @@
       }
     }
   }
+
+
 }
 
 //Box Tools Buttons
@@ -233,12 +239,20 @@
     box-shadow: none;
   }
 }
-
+.box-title-number {
+  float: right;
+  display: inline-block;
+}
 //Box Body
 .box-body {
   @include border-bottom-radius($box-border-radius);
   @include border-left-radius($box-border-radius);
   padding: $box-padding;
+
+  @media (min-width: $screen-md-min) {
+    padding: 20px;
+  }
+
   .no-header & {
     @include border-top-radius($box-border-radius);
   }
