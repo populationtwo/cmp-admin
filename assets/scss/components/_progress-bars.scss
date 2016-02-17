@@ -109,3 +109,21 @@
 .progress-bar-danger {
   @includ progress-bar-variant($red);
 }
+
+
+.bar-label {
+  @include clearfix;
+  &__name {
+    float: left;
+    font-size: 13px;
+    color: $shuttle-gray;
+  }
+  &__number {
+    float: right;
+    font-size: 15px;
+    color: $shuttle-gray;
+  }
+}
+
+
+
