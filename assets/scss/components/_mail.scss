@@ -1,0 +1,49 @@
+/*
+ * Component: Inbox Preview List
+ * ------------------------
+ */
+.inbox-preview-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  > .item {
+    border-radius: $box-border-radius;
+    @include box-shadow($box-boxshadow);
+    @include clearfix;
+    padding: 10px 0;
+    background: #fff;
+  }
+  //.inbox-info {
+  //  margin-left: 60px;
+  //}
+  .product-title, .mail-sender {
+    font-weight: 600;
+    color: $shuttle-gray;
+  }
+  .product-description, .mail-description {
+    display: block;
+    color: $oslo-gray;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .mail-time {
+    font-size: 13px;
+    color: $oslo-gray;
+
+  }
+  .meta-time {
+    color: $french-gray;
+    font-size: 12px;
+  }
+
+  &--box > .item {
+    @include box-shadow(none);
+    border-radius: 0;
+    border-bottom: 1px solid $box-border-color;
+    &:last-of-type {
+      border-bottom-width: 0;
+    }
+  }
+
+}
