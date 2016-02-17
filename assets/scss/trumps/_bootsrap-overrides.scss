@@ -1,0 +1,9 @@
+
+.progress {
+  &.small {
+    height: 6px;
+  }
+}
+.progress-bar-ns {
+  @include progress-bar-variant($shuttle-gray);
+}
