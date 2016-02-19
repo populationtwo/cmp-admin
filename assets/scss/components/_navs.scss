@@ -244,23 +244,11 @@
         }
         &:hover, &:focus {
           border-color: transparent;
-
         }
       }
     }
   }
-  .tab-content > .tab-pane {
-    background: #FCFCFC;
-  }
-  .tab-pane__header {
-    background: #FCFCFC;
-    border-bottom: 1px solid black(0.2);
-    @include clearfix;
-    padding: 20px;
-  }
-  .tab-pane__body {
-    padding: 20px;
-  }
+
 }
 
 /* PAGINATION */
