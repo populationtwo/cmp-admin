@@ -1,4 +1,11 @@
 .billing-control {
   border-bottom: 1px solid #f4f4f4;
   padding: 20px;
+  .btn-group {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    @media (min-width: $screen-xs-min) {
+      margin-bottom: 0;
+    }
+  }
 }
