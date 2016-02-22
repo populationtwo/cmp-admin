@@ -5,7 +5,7 @@
 
 .table {
   //Cells
-  > thead,
+  /*> thead,
   > tbody,
   > tfoot {
     > tr {
@@ -14,7 +14,7 @@
         border-top: 1px solid $box-border-color;
       }
     }
-  }
+  }*/
   //thead cells
   > thead > tr > th {
     border-bottom: 2px solid $box-border-color;
@@ -67,5 +67,17 @@ table.text-center {
   }
   td {
     text-align: right;
+  }
+}
+
+// Table highlight
+.highlight {
+  background: #f3f4f6;
+}
+
+//Billing table
+.table-billing {
+  > tbody > tr:first-child > th {
+    border-top-color: transparent;
   }
 }
