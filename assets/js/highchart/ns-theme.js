@@ -1,0 +1,73 @@
+/**
+ * New Signature theme for Highcharts JS
+ */
+
+// Load the fonts
+Highcharts.createElement('link', {
+    href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600',
+    rel: 'stylesheet',
+    type: 'text/css'
+}, null, document.getElementsByTagName('head')[0]);
+
+Highcharts.theme = {
+    colors: ["#004b87", "#54c9e8", "#90ee7e", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee",
+        "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+    chart: {
+        backgroundColor: null,
+        style: {
+            fontFamily: "Source Sans Pro, sans-serif"
+        }
+    },
+    title: {
+        style: {
+            fontSize: '16px',
+            fontWeight: 'bold',
+            textTransform: 'uppercase'
+        }
+    },
+    tooltip: {
+        borderWidth: 0,
+        backgroundColor: 'rgba(219,219,216,0.8)',
+        shadow: false
+    },
+    legend: {
+        itemStyle: {
+            fontWeight: 'bold',
+            fontSize: '13px'
+        }
+    },
+    xAxis: {
+        gridLineWidth: 0,
+        labels: {
+            style: {
+                fontSize: '12px'
+            }
+        }
+    },
+    yAxis: {
+        minorTickInterval: 'auto',
+        title: {
+            style: {
+                textTransform: 'uppercase'
+            }
+        },
+        labels: {
+            style: {
+                fontSize: '12px'
+            }
+        }
+    },
+    plotOptions: {
+        candlestick: {
+            lineColor: '#404048'
+        }
+    },
+
+
+    // General
+    background2: '#F0F0EA'
+
+};
+
+// Apply the theme
+Highcharts.setOptions(Highcharts.theme);

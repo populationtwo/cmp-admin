@@ -613,7 +613,8 @@
 .number {
   color: $shuttle-gray;
   font-weight: 300;
-  &.large {
+  font-size: 28px;
+&.large {
     font-size: 40px;
   }
 }

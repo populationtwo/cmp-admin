@@ -117,6 +117,7 @@
     float: left;
     font-size: 13px;
     color: $shuttle-gray;
+    margin-bottom: 8px;
   }
   &__number {
     float: right;
@@ -124,6 +125,15 @@
     color: $shuttle-gray;
   }
 }
+.bar-label__number__start {
+  float: left;
+  font-size: 12px;
+}
+.bar-label__number__end {
+  float: right;
+  font-size: 12px;
+}
+
 
 
 
