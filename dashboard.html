@@ -263,13 +263,102 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <div class="box">
                 <div class="box-header with-border">
                     <h3 class="box-title">Spending YTD</h3>
-
+                    <ul class="nav nav-pills">
+                        <li class="active"><a href="#monthly_tab" data-toggle="tab">Monthly</a></li>
+                        <li><a href="#annual_tab" data-toggle="tab">Annual</a></li>
+                    </ul>
                 </div>
                 <!-- /.box-header -->
                 <div class="box-body">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem consequuntur doloremque eum
-                    laudantium, minima nobis, nostrum nulla repudiandae rerum sapiente sunt totam vero! Autem doloremque
-                    in inventore quibusdam suscipit?
+
+                    <!-- Spending Tabs -->
+                    <div class="">
+
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="monthly_tab">
+
+                                <div class="row">
+
+                                    <div class="col-md-6">
+                                        <div id="spendingYtdChart"
+                                             style="min-width: 310px; height: 200px; margin: 0 auto"></div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="spending-ytd-bar">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="number">+36%</div>
+                                                    <div class="bar-label">
+                                                        <span class="bar-label__name">Spending Goals Achieved YTD</span>
+                                                        <span class="key-num negative"> 15% <i
+                                                                class="fa fa-level-down"></i></span>
+                                                    </div>
+                                                    <div class="progress small">
+                                                        <div class="progress-bar progress-bar-ns" role="progressbar"
+                                                             aria-valuenow="36" aria-valuemin="0" aria-valuemax="100"
+                                                             style="width: 36%">
+                                                            <span class=""></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="number">$4,235.14</div>
+                                                    <div class="bar-label">
+                                                        <span class="bar-label__name">Monthly Average Spending</span>
+                                                        <span class="key-num negative"> 14% <i
+                                                                class="fa fa-level-down"></i></span>
+                                                    </div>
+                                                    <div class="progress small">
+                                                        <div class="progress-bar progress-bar-ns" role="progressbar"
+                                                             aria-valuenow="4235" aria-valuemin="0" aria-valuemax="100"
+                                                             style="width: 60%">
+                                                            <span class=""></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="number">$67,322.01</div>
+                                                    <div class="bar-label">
+                                                        <span class="bar-label__name">Total Yearly Spending</span>
+                                                        <span class="key-num negative"> 22% <i
+                                                                class="fa fa-level-down"></i></span>
+                                                    </div>
+                                                    <div class="progress small">
+                                                        <div class="progress-bar progress-bar-ns" role="progressbar"
+                                                             aria-valuenow="67322" aria-valuemin="0" aria-valuemax="100"
+                                                             style="width: 91%">
+                                                            <span class=""></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="number">$56,400.25</div>
+                                                    <div class="bar-label">
+                                                        <span class="bar-label__name">Yearly Average Spending</span>
+                                                        <span class="key-num positive"> 15% <i
+                                                                class="fa fa-level-down"></i></span>
+                                                    </div>
+                                                    <div class="progress small">
+                                                        <div class="progress-bar progress-bar-ns" role="progressbar"
+                                                             aria-valuenow="56,400" aria-valuemin="0" aria-valuemax="100"
+                                                             style="width: 72%">
+                                                            <span class=""></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.tab-pane -->
+                            <div class="tab-pane" id="annual_tab">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium facilis id, iusto odit praesentium quae recusandae suscipit. Corporis dicta dolor eveniet qui. Eveniet molestiae nihil pariatur quo suscipit, vitae voluptatum.
+                            </div>
+                            <!-- /.tab-pane -->
+
+                        </div>
+                        <!-- /.tab-content -->
+                    </div>
+                    <!-- nav-tabs-custom -->
+
                 </div>
                 <!-- /.box-body -->
 
@@ -450,6 +539,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                             <span class="sr-only">40% Complete (success)</span>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -458,6 +548,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <!-- /.box -->
                 </div>
             </div>
+
+
         </section>
         <!-- /.content -->
     </div>
@@ -475,6 +567,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="assets/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
 <!-- ChartJS 1.0.1 -->
 <script src="plugins/chartjs/Chart.min.js"></script>
+
+<!-- HighChartsJS  -->
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<!-- HighChartsJS theme -->
+<script src="assets/js/highchart/ns-theme.js"></script>
 <!-- AdminLTE App -->
 <script src="dist/js/app.js"></script>
 <!-- page script -->
@@ -543,6 +641,164 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
     });
 </script>
+
+<script>
+    $(function () {
+
+        //-----------------------
+        //- SPENDING YTD CHART -
+        //-----------------------
+        $('#spendingYtdChart').highcharts({
+            chart: {
+                zoomType: 'xy'
+            },
+            title: {
+                text: ''
+            },
+            subtitle: {
+                text: ''
+            },
+            xAxis: [{
+                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                    'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                crosshair: true
+            }],
+            yAxis: [{ // Primary yAxis
+                labels: {
+                    format: '$ {value}',
+                    style: {
+                        color: Highcharts.getOptions().colors[0]
+                    }
+                },
+                title: {
+                    text: '',
+                    style: {
+                        color: Highcharts.getOptions().colors[0]
+                    }
+                }
+            }, { // Secondary yAxis
+                title: {
+                    text: '',
+                    style: {
+                        color: 'transparent'
+                    }
+                },
+                labels: {
+                    format: '',
+                    style: {
+                        color: 'transparent'
+                    }
+                },
+                opposite: true
+            }
+            ],
+            tooltip: {
+                shared: true
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'left',
+                x: 60,
+                verticalAlign: 'top',
+                y: 20,
+                floating: true,
+                backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'
+            },
+            series: [{
+                name: 'Yearly Actuals',
+                type: 'column',
+                yAxis: 1,
+                data: [4800, 7200, 7700, 4800, 7000, 7100, 7000, 9000, 6100, 5194, 4956, 3544],
+                tooltip: {
+                    valuePrefix: '$'
+                }
+
+            }, {
+                name: 'Yearly Avg',
+                type: 'area',
+                data: [2200, 2600, 2800, 2000, 2600, 4000, 3400, 5800, 3100, 2800, 2400, 1700],
+                tooltip: {
+                    valuePrefix: '$'
+                }
+            }]
+        });
+
+
+        //----------------------------
+        //- BILLING BY SERVICE CHART -
+        //----------------------------
+        // Make monochrome colors and set them as default for all pies
+        Highcharts.getOptions().plotOptions.pie.colors = (function () {
+            var colors = [],
+                    base = '#4998d7',
+                    i;
+
+            for (i = 0; i < 10; i += 1) {
+                // Start out with a darkened base color (negative brighten), and end
+                // up with a much brighter color
+                colors.push(Highcharts.Color(base).brighten((i - 3) / 7).get());
+            }
+            return colors;
+        }());
+
+        // Build the chart
+        $('#billingServiceChart').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            title: {
+                text: ''
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'left',
+                x: 0,
+                verticalAlign: 'bottom',
+                y: 0,
+                floating: true,
+                backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: true,
+                        format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                        style: {
+                            color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                        }
+                    },
+                    showInLegend: true
+
+                }
+            },
+            series: [{
+                name: '',
+                colorByPoint: true,
+                data: [{
+                    name: 'Virtual Machines',
+                    y: 93.78
+                }, {
+                    name: 'Storage',
+                    y: 4.79,
+                }, {
+                    name: 'Data Transfers',
+                    y: 1.43
+                }]
+            }]
+        });
+    });
+
+</script>
+
+
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the
      user experience. Slimscroll is required when using the
