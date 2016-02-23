@@ -251,6 +251,47 @@
 
 }
 
+.nav-tabs-button {
+  > li {
+    > a {
+      font-size: 12px;
+      border-top: 1px solid black(0.2);
+      border-right: 1px solid black(0.2);
+      border-bottom: 1px solid black(0.2);
+      border-left: 1px solid transparent;
+      padding: 4px 15px;
+      color: $shuttle-gray;
+    }
+    + li {
+      margin-left: 0;
+    }
+    &:first-child {
+      > a {
+        border-left: 1px solid black(0.2);
+        border-bottom-left-radius: 4px;
+        border-top-left-radius: 4px;
+      }
+    }
+    &:last-child {
+      > a {
+        border-bottom-right-radius: 4px;
+        border-top-right-radius: 4px;
+      }
+    }
+    &.active {
+      > a, > a:hover, > a:focus {
+        background: lighten($oslo-gray,40%);
+        border-top: 1px solid black(0.2);
+        //border-left: 1px solid black(0.2);
+        color: $shuttle-gray;
+        font-weight: normal;
+
+      }
+    }
+  }
+
+}
+
 /* PAGINATION */
 .pagination {
   > li > a {
@@ -263,3 +304,4 @@
     }
   }
 }
+

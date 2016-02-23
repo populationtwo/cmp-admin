@@ -231,6 +231,12 @@
   font-size: 12px;
   background: transparent;
   color: darken($box-default-border-top-color, 20%);
+  top: -8px;
+  position: relative;
+  @media (min-width: $screen-md-min) {
+    top: auto;
+    position: static;
+  }
   .open &,
   &:hover {
     color: darken($box-default-border-top-color, 40%);
@@ -238,10 +244,22 @@
   &.btn:active {
     box-shadow: none;
   }
+
 }
 .box-title-number {
   float: right;
   display: inline-block;
+}
+.box-tools {
+  > .label {
+    top: -8px;
+    position: relative;
+    @media (min-width: $screen-md-min) {
+      top: auto;
+      position: static;
+    }
+
+  }
 }
 //Box Body
 .box-body {

@@ -5,3 +5,17 @@
     position: relative;
   }
 }
+
+.spending-ytd-box {
+  .nav-tabs-button {
+    //float: left;
+    margin-right: 12px;
+    margin-bottom: 10px;
+    padding-top: 2px;
+    @media (min-width: $screen-sm-min) {
+      float: left;
+
+    }
+
+  }
+}
